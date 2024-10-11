@@ -13,3 +13,5 @@ Obs.: No plano gratuito do render o projeto é colocado em inatividade após um 
 **CI/CD**: A gestão dos pipelines de CI/CD são realizadas a partir da integração com o CIRCLE CI.
 
 Status da última execução dos jobs: [![CircleCI](https://dl.circleci.com/status-badge/img/circleci/E6yLkkbLPeN9mJonkdKFpN/EaangQroT8yrhpZBZufqY5/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/E6yLkkbLPeN9mJonkdKFpN/EaangQroT8yrhpZBZufqY5/tree/main)
+
+**LOGS**: Os eventos (logs) da aplicação são geridos pela biblioteca Winston e são registrados dentro do gestor de logs do Render.
