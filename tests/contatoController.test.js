@@ -23,7 +23,11 @@ describe('Contato Controller', () => {
         req = {
             body: {},
             params: {},
-            userId: 1
+            userId: 1,
+            logger: {
+                info: jest.fn(),
+                error: jest.fn()
+            }
         };
         res = {
             status: jest.fn().mockReturnThis(),

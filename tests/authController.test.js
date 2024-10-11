@@ -16,7 +16,11 @@ process.env = {
 describe('Auth Controller - Register', () => {
     it('Deve registrar um novo usuário', async () => {
         const req = {
-            body: { nome: 'Teste', email: 'teste@example.com', senha: 'senha123' }
+            body: { nome: 'Teste', email: 'teste@example.com', senha: 'senha123' },
+            logger: {
+                info: jest.fn(),
+                error: jest.fn()
+            }
         };
         const res = {
             status: jest.fn().mockReturnThis(),
@@ -45,7 +49,11 @@ describe('Auth Controller - Register', () => {
 describe('Auth Controller - Login', () => {
     it('Deve fazer login com credenciais corretas e retornar um token JWT', async () => {
         const req = {
-            body: { email: 'teste@example.com', senha: 'senha123' }
+            body: { email: 'teste@example.com', senha: 'senha123' },
+            logger: {
+                info: jest.fn(),
+                error: jest.fn()
+            }
         };
         const res = {
             status: jest.fn().mockReturnThis(),
@@ -66,7 +74,11 @@ describe('Auth Controller - Login', () => {
 
     it('Deve retornar 401 se as credenciais estiverem erradas', async () => {
         const req = {
-            body: { email: 'teste@example.com', senha: 'senhaErrada' }
+            body: { email: 'teste@example.com', senha: 'senhaErrada' },
+            logger: {
+                info: jest.fn(),
+                error: jest.fn()
+            }
         };
         const res = {
             status: jest.fn().mockReturnThis(),
