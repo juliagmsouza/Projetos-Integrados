@@ -1,6 +1,9 @@
 const Usuario = require('../models/usuario');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const sgMail = require('@sendgrid/mail');
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.register = async (req, res) => {
   const logger = req.logger;
@@ -31,5 +34,71 @@ exports.login = async (req, res) => {
   } catch (error) {
     logger.error('Erro ao efetuar login', { err: error })
     res.status(500).json({ error: 'Erro ao fazer login' });
+  }
+};
+
+exports.solicitarRecuperacaoSenha = async (req, res) => {
+  const logger = req.logger;
+  logger.info('Recuperação de senha iniciada.');
+  const { email } = req.body;
+
+  try {
+    const usuario = await Usuario.findOne({ where: { email } });
+    if (!usuario) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+
+    const token = jwt.sign({ userId: usuario.id }, process.env.JWT_SECRET, { expiresIn: process.env.PASSWORD_RESET_EXPIRATION || '1h' });
+
+    const linkRecuperacao = `http://localhost:3000/resetar-senha?token=${token}`;
+
+
+    const msg = {
+      to: email,
+      from: 'juliagmsouza12@gmail.com', 
+      subject: 'Recuperação de Senha',
+      html: `
+        <p>Você solicitou a recuperação de senha.</p>
+        <p>Clique no link abaixo para redefinir sua senha:</p>
+        <a href="${linkRecuperacao}">Redefinir Senha</a>
+        <p>O link expira em 1 hora.</p>
+      `,
+    };
+
+    await sgMail.send(msg);
+
+    res.json({ message: 'E-mail de recuperação de senha enviado com sucesso' });
+  } catch (error) {
+    logger.error('Falhar ao enviar link de recuperação de senha', { err: error })
+
+    res.status(500).json({ error: 'Erro ao solicitar recuperação de senha' });
+  }
+};
+
+
+exports.redefinirSenha = async (req, res) => {
+  const logger = req.logger;
+  logger.info('Redefinição de senha iniciada.');
+  const { token, novaSenha } = req.body;
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    const usuario = await Usuario.findByPk(decoded.userId);
+    if (!usuario) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+
+    const senhaHashed = await bcrypt.hash(novaSenha, 10);
+    usuario.senha = senhaHashed;
+    await usuario.save();
+
+    res.json({ message: 'Senha alterada com sucesso' });
+  } catch (error) {
+    logger.error('Falhar ao redefinir senha', { err: error })
+    if (error.name === 'TokenExpiredError') {
+      return res.status(400).json({ error: 'O token de recuperação expirou' });
+    }
+    res.status(500).json({ error: 'Erro ao redefinir a senha' });
   }
 };

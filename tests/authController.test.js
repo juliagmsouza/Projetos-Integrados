@@ -1,17 +1,19 @@
 const authController = require('../controllers/authController');
 const Usuario = require('../models/usuario');
 const bcrypt = require('bcryptjs');  // Mudar para bcryptjs
-
+const sgMail = require('@sendgrid/mail');
 const jwt = require('jsonwebtoken');
 
-jest.mock('bcryptjs'); 
+jest.mock('bcryptjs');
 jest.mock('../models/usuario');
 jest.mock('jsonwebtoken');
+jest.mock('@sendgrid/mail');
 
 process.env = {
     PORT: 3000,
-    'JWT_SECRET': 'chave-local'
-  };
+    'JWT_SECRET': 'chave-local',
+    'SENDGRID_API_KEY': 'key'
+};
 
 describe('Auth Controller - Register', () => {
     it('Deve registrar um novo usuário', async () => {
@@ -45,6 +47,8 @@ describe('Auth Controller - Register', () => {
         });
     });
 });
+
+
 
 describe('Auth Controller - Login', () => {
     it('Deve fazer login com credenciais corretas e retornar um token JWT', async () => {
@@ -94,5 +98,66 @@ describe('Auth Controller - Login', () => {
 
         expect(res.status).toHaveBeenCalledWith(401);
         expect(res.json).toHaveBeenCalledWith({ error: 'Credenciais inválidas' });
+    });
+});
+
+describe('Auth Controller - Recuperar senha', () => {
+    it('Deve enviar email de recuperação de senha', async () => {
+        const req = {
+            body: { email: 'teste@example.com' },
+            logger: {
+                info: jest.fn(),
+                error: jest.fn()
+            }
+        };
+        const res = {
+            json: jest.fn(),
+            status: jest.fn().mockReturnThis(),
+        };
+
+        Usuario.findOne.mockResolvedValue({
+            id: 1,
+        });
+
+        await authController.solicitarRecuperacaoSenha(req, res);
+
+
+
+        expect(sgMail.send).toHaveBeenCalledWith(expect.objectContaining({
+            to: 'teste@example.com',
+            from: 'juliagmsouza12@gmail.com',
+            subject: 'Recuperação de Senha',
+        }));
+        expect(res.json).toHaveBeenCalledWith({ message: 'E-mail de recuperação de senha enviado com sucesso' });
+    });
+});
+
+describe('Auth Controller - Redefinir senha', () => {
+    it('Deve redefinir senha', async () => {
+        const req = {
+            body: { token: 'jwt', novaSenha: 'novaSenha' },
+            logger: {
+                info: jest.fn(),
+                error: jest.fn()
+            }
+        };
+        const res = {
+            json: jest.fn(),
+            status: jest.fn().mockReturnThis(),
+        };
+
+        jwt.verify.mockReturnValue({userId: 1})
+
+        Usuario.findByPk.mockResolvedValue({
+            id: 1,
+            save: jest.fn()
+        });
+
+        await authController.redefinirSenha(req, res);
+
+
+
+        expect(bcrypt.hash).toHaveBeenCalledWith('novaSenha', 10);
+        expect(res.json).toHaveBeenCalledWith({ message: 'Senha alterada com sucesso' });
     });
 });

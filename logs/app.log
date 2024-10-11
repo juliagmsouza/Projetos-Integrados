@@ -7,3 +7,16 @@
 2024-10-11T18:09:31.499Z [INFO]: Login iniciado
 2024-10-11T18:09:31.505Z [ERROR]: Erro ao efetuar login
 2024-10-11T18:09:31.507Z [INFO]: Fim da requisição POST /login - Status: 500 - Tempo: 11ms
+2024-10-11T18:44:50.463Z [INFO]: Início da requisição POST /register
+2024-10-11T18:44:50.465Z [INFO]: Cadastro de novo usuário
+2024-10-11T18:44:50.555Z [INFO]: Fim da requisição POST /register - Status: 201 - Tempo: 93ms
+2024-10-11T18:47:07.885Z [INFO]: Início da requisição POST /recuperar-senha
+2024-10-11T18:47:08.731Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 500 - Tempo: 847ms
+2024-10-11T18:49:09.065Z [INFO]: Início da requisição POST /recuperar-senha
+2024-10-11T18:49:09.819Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 500 - Tempo: 754ms
+2024-10-11T18:49:42.396Z [INFO]: Início da requisição POST /recuperar-senha
+2024-10-11T18:49:43.110Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 500 - Tempo: 715ms
+2024-10-11T18:50:11.365Z [INFO]: Início da requisição POST /recuperar-senha
+2024-10-11T18:50:12.485Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 1121ms
+2024-10-11T18:52:01.345Z [INFO]: Início da requisição POST /recuperar-senha
+2024-10-11T18:52:02.058Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 713ms
