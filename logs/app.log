@@ -1,0 +1,9 @@
+2024-10-11T18:05:22.118Z [INFO]: Login iniciado
+2024-10-11T18:05:31.285Z [INFO]: Login iniciado
+2024-10-11T18:08:56.658Z [INFO]: Início da requisição POST /login
+2024-10-11T18:08:56.660Z [INFO]: Login iniciado
+2024-10-11T18:08:56.750Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 92ms
+2024-10-11T18:09:31.496Z [INFO]: Início da requisição POST /login
+2024-10-11T18:09:31.499Z [INFO]: Login iniciado
+2024-10-11T18:09:31.505Z [ERROR]: Erro ao efetuar login
+2024-10-11T18:09:31.507Z [INFO]: Fim da requisição POST /login - Status: 500 - Tempo: 11ms

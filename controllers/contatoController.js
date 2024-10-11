@@ -3,9 +3,10 @@ const { Contato } = require('../models/index');
 const { Endereco } = require('../models/index');
 
 exports.adicionarContato = async (req, res) => {
+  const logger = req.logger;
+  logger.info('Cadastro de novo contato');
   const { nome, telefone, email, favorito, rua, cidade, estado, cep } = req.body;
   const usuarioId = req.userId;
-
   try {
     const contato = await Contato.create({ nome, telefone, email, usuarioId, favorito });
 
@@ -19,22 +20,28 @@ exports.adicionarContato = async (req, res) => {
 
     res.status(201).json({ id: contato.id });
   } catch (error) {
+    logger.error('Erro ao adicionar novo contato', { err: error });
     res.status(500).json({ error: 'Erro ao adicionar o contato' });
   }
 };
 
 exports.listarContatos = async (req, res) => {
+  const logger = req.logger;
+  logger.info('Listagem de contatos');
   try {
     const contatos = await Contato.findAll({
       where: { usuarioId: req.userId }
     });
     res.status(200).json(contatos.map(contato => ({ id: contato.id, nome: contato.nome })));
   } catch (error) {
+    logger.error('Erro ao listar contatos', { err: error });
     res.status(500).json({ error: 'Erro ao listar contatos' });
   }
 };
 
 exports.detalharContato = async (req, res) => {
+  const logger = req.logger;
+  logger.info('Detalhamento de contato');
   try {
     const { id } = req.params;
 
@@ -53,11 +60,14 @@ exports.detalharContato = async (req, res) => {
 
     res.status(200).json(contato);
   } catch (error) {
+    logger.error('Erro ao detalhar contato', { err: error });
     res.status(500).json({ error: 'Erro ao detalhar contato' });
   }
 };
 
 exports.atualizarContato = async (req, res) => {
+  const logger = req.logger;
+  logger.info('Atualização de contato');
   const { nome, telefone, email, rua, cidade, estado, cep } = req.body;
   const { id } = req.params;
 
@@ -76,11 +86,14 @@ exports.atualizarContato = async (req, res) => {
 
     res.status(200).json({ id: contato.id });
   } catch (error) {
+    logger.error('Erro ao atualizar contato', { err: error });
     res.status(500).json({ error: 'Erro ao atualizar o contato' });
   }
 };
 
 exports.excluirContato = async (req, res) => {
+  const logger = req.logger;
+  logger.info('Remoção de contato');
   const { id } = req.params;
 
   try {
@@ -92,6 +105,7 @@ exports.excluirContato = async (req, res) => {
     await contato.destroy();
     res.status(204).send();
   } catch (error) {
+    logger.error('Erro ao excluir contato', { err: error });
     res.status(500).json({ error: 'Erro ao excluir o contato' });
   }
 };
