@@ -29,9 +29,14 @@ exports.listarContatos = async (req, res) => {
   const logger = req.logger;
   logger.info('Listagem de contatos');
   try {
-    const contatos = await Contato.findAll({
+    const options = {
       where: { usuarioId: req.userId }
-    });
+    };
+
+    if (req.query.favorito) {
+      options.where.favorito = true;
+    }
+    const contatos = await Contato.findAll(options);
     res.status(200).json(contatos.map(contato => ({ id: contato.id, nome: contato.nome })));
   } catch (error) {
     logger.error('Erro ao listar contatos', { err: error });
