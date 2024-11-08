@@ -23,6 +23,7 @@ describe('Contato Controller', () => {
         req = {
             body: {},
             params: {},
+            query: {},
             userId: 1,
             logger: {
                 info: jest.fn(),
@@ -103,7 +104,7 @@ describe('Contato Controller', () => {
 
             expect(Contato.findOne).toHaveBeenCalledWith({
                 where: { usuarioId: 1, id: 1 },
-                attributes: ['id', 'nome', 'telefone', 'email', 'createdAt', 'updatedAt'],
+                attributes: ['id', 'nome', 'telefone', 'email', 'favorito', 'createdAt', 'updatedAt'],
                 include: [{
                     model: Endereco,
                     attributes: ['rua', 'cidade', 'estado', 'cep']
