@@ -20,3 +20,330 @@
 2024-10-11T18:50:12.485Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 1121ms
 2024-10-11T18:52:01.345Z [INFO]: Início da requisição POST /recuperar-senha
 2024-10-11T18:52:02.058Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 713ms
+2024-11-07T22:03:52.519Z [INFO]: Início da requisição POST /register
+2024-11-07T22:03:52.522Z [INFO]: Cadastro de novo usuário
+2024-11-07T22:03:52.616Z [INFO]: Fim da requisição POST /register - Status: 201 - Tempo: 97ms
+2024-11-07T22:11:52.208Z [INFO]: Início da requisição POST /login
+2024-11-07T22:11:52.209Z [INFO]: Login iniciado
+2024-11-07T22:11:52.217Z [ERROR]: Erro ao efetuar login
+2024-11-07T22:11:52.219Z [INFO]: Fim da requisição POST /login - Status: 500 - Tempo: 12ms
+2024-11-07T22:16:07.314Z [INFO]: Início da requisição POST /login
+2024-11-07T22:16:07.315Z [INFO]: Login iniciado
+2024-11-07T22:16:07.325Z [ERROR]: Erro ao efetuar login
+2024-11-07T22:16:07.327Z [INFO]: Fim da requisição POST /login - Status: 500 - Tempo: 13ms
+2024-11-07T22:16:52.725Z [INFO]: Início da requisição POST /login
+2024-11-07T22:16:52.726Z [INFO]: Login iniciado
+2024-11-07T22:16:52.808Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 82ms
+2024-11-07T22:25:29.319Z [INFO]: Início da requisição POST /login
+2024-11-07T22:25:29.319Z [INFO]: Login iniciado
+2024-11-07T22:25:29.385Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 67ms
+2024-11-07T22:25:49.784Z [INFO]: Início da requisição POST /login
+2024-11-07T22:25:49.786Z [INFO]: Login iniciado
+2024-11-07T22:25:49.871Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 87ms
+2024-11-07T22:37:11.438Z [INFO]: Início da requisição POST /login
+2024-11-07T22:37:11.438Z [INFO]: Login iniciado
+2024-11-07T22:37:11.507Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 69ms
+2024-11-07T22:37:30.828Z [INFO]: Início da requisição POST /login
+2024-11-07T22:37:30.828Z [INFO]: Login iniciado
+2024-11-07T22:37:30.897Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 69ms
+2024-11-07T22:37:53.649Z [INFO]: Início da requisição POST /login
+2024-11-07T22:37:53.649Z [INFO]: Login iniciado
+2024-11-07T22:37:53.714Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 65ms
+2024-11-07T22:38:42.175Z [INFO]: Início da requisição POST /login
+2024-11-07T22:38:42.176Z [INFO]: Login iniciado
+2024-11-07T22:38:42.244Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 69ms
+2024-11-07T22:41:42.950Z [INFO]: Início da requisição POST /login
+2024-11-07T22:41:42.951Z [INFO]: Login iniciado
+2024-11-07T22:41:43.018Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 68ms
+2024-11-07T22:42:14.182Z [INFO]: Início da requisição POST /login
+2024-11-07T22:42:14.183Z [INFO]: Login iniciado
+2024-11-07T22:42:14.253Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 71ms
+2024-11-07T22:43:55.221Z [INFO]: Início da requisição POST /login
+2024-11-07T22:43:55.221Z [INFO]: Login iniciado
+2024-11-07T22:43:55.289Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 68ms
+2024-11-07T22:45:09.890Z [INFO]: Início da requisição POST /login
+2024-11-07T22:45:09.890Z [INFO]: Login iniciado
+2024-11-07T22:45:09.958Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 68ms
+2024-11-07T23:01:42.294Z [INFO]: Início da requisição GET /
+2024-11-07T23:01:42.296Z [INFO]: Listagem de contatos
+2024-11-07T23:01:42.299Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 5ms
+2024-11-07T23:01:44.581Z [INFO]: Início da requisição GET /
+2024-11-07T23:01:44.582Z [INFO]: Listagem de contatos
+2024-11-07T23:01:44.584Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:02:19.061Z [INFO]: Início da requisição POST /
+2024-11-07T23:02:19.063Z [INFO]: Fim da requisição POST / - Status: 401 - Tempo: 2ms
+2024-11-07T23:02:32.555Z [INFO]: Início da requisição POST /
+2024-11-07T23:02:32.556Z [INFO]: Cadastro de novo contato
+2024-11-07T23:02:32.571Z [INFO]: Fim da requisição POST / - Status: 201 - Tempo: 16ms
+2024-11-07T23:02:35.945Z [INFO]: Início da requisição GET /
+2024-11-07T23:02:35.946Z [INFO]: Listagem de contatos
+2024-11-07T23:02:35.948Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 3ms
+2024-11-07T23:02:54.396Z [INFO]: Início da requisição GET /
+2024-11-07T23:02:54.397Z [INFO]: Listagem de contatos
+2024-11-07T23:02:54.399Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:03:04.939Z [INFO]: Início da requisição GET /
+2024-11-07T23:03:04.940Z [INFO]: Listagem de contatos
+2024-11-07T23:03:04.943Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 4ms
+2024-11-07T23:04:35.061Z [INFO]: Início da requisição GET /
+2024-11-07T23:04:35.062Z [INFO]: Listagem de contatos
+2024-11-07T23:04:35.064Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:05:19.841Z [INFO]: Início da requisição GET /
+2024-11-07T23:05:19.842Z [INFO]: Listagem de contatos
+2024-11-07T23:05:19.844Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:05:56.374Z [INFO]: Início da requisição GET /
+2024-11-07T23:05:56.375Z [INFO]: Listagem de contatos
+2024-11-07T23:05:56.376Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 2ms
+2024-11-07T23:06:02.124Z [INFO]: Início da requisição GET /4
+2024-11-07T23:06:02.125Z [INFO]: Detalhamento de contato
+2024-11-07T23:06:02.132Z [INFO]: Fim da requisição GET /4 - Status: 200 - Tempo: 8ms
+2024-11-07T23:06:46.909Z [INFO]: Início da requisição GET /
+2024-11-07T23:06:46.910Z [INFO]: Listagem de contatos
+2024-11-07T23:06:46.912Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:06:47.650Z [INFO]: Início da requisição GET /4
+2024-11-07T23:06:47.651Z [INFO]: Detalhamento de contato
+2024-11-07T23:06:47.654Z [INFO]: Fim da requisição GET /4 - Status: 304 - Tempo: 4ms
+2024-11-07T23:08:34.659Z [INFO]: Início da requisição GET /
+2024-11-07T23:08:34.660Z [INFO]: Listagem de contatos
+2024-11-07T23:08:34.662Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:08:35.714Z [INFO]: Início da requisição GET /4
+2024-11-07T23:08:35.715Z [INFO]: Detalhamento de contato
+2024-11-07T23:08:35.717Z [INFO]: Fim da requisição GET /4 - Status: 304 - Tempo: 3ms
+2024-11-07T23:09:07.017Z [INFO]: Início da requisição GET /
+2024-11-07T23:09:07.019Z [INFO]: Listagem de contatos
+2024-11-07T23:09:07.024Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 7ms
+2024-11-07T23:09:09.853Z [INFO]: Início da requisição GET /
+2024-11-07T23:09:09.854Z [INFO]: Listagem de contatos
+2024-11-07T23:09:09.856Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:09:10.601Z [INFO]: Início da requisição GET /4
+2024-11-07T23:09:10.602Z [INFO]: Detalhamento de contato
+2024-11-07T23:09:10.604Z [INFO]: Fim da requisição GET /4 - Status: 304 - Tempo: 3ms
+2024-11-07T23:09:14.615Z [INFO]: Início da requisição GET /4
+2024-11-07T23:09:14.616Z [INFO]: Fim da requisição GET /4 - Status: 401 - Tempo: 1ms
+2024-11-07T23:09:22.210Z [INFO]: Início da requisição GET /
+2024-11-07T23:09:22.211Z [INFO]: Listagem de contatos
+2024-11-07T23:09:22.212Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 2ms
+2024-11-07T23:09:23.296Z [INFO]: Início da requisição GET /4
+2024-11-07T23:09:23.297Z [INFO]: Detalhamento de contato
+2024-11-07T23:09:23.300Z [INFO]: Fim da requisição GET /4 - Status: 304 - Tempo: 4ms
+2024-11-07T23:09:44.067Z [INFO]: Início da requisição GET /4
+2024-11-07T23:09:44.067Z [INFO]: Fim da requisição GET /4 - Status: 401 - Tempo: 0ms
+2024-11-07T23:10:32.525Z [INFO]: Início da requisição POST /login
+2024-11-07T23:10:32.526Z [INFO]: Login iniciado
+2024-11-07T23:10:32.592Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 67ms
+2024-11-07T23:10:32.615Z [INFO]: Início da requisição GET /
+2024-11-07T23:10:32.616Z [INFO]: Listagem de contatos
+2024-11-07T23:10:32.620Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 5ms
+2024-11-07T23:10:39.766Z [INFO]: Início da requisição GET /4
+2024-11-07T23:10:39.767Z [INFO]: Detalhamento de contato
+2024-11-07T23:10:39.770Z [INFO]: Fim da requisição GET /4 - Status: 304 - Tempo: 4ms
+2024-11-07T23:10:47.820Z [INFO]: Início da requisição GET /4
+2024-11-07T23:10:47.821Z [INFO]: Fim da requisição GET /4 - Status: 401 - Tempo: 1ms
+2024-11-07T23:11:02.997Z [INFO]: Início da requisição GET /
+2024-11-07T23:11:02.998Z [INFO]: Listagem de contatos
+2024-11-07T23:11:03.000Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:11:04.033Z [INFO]: Início da requisição GET /4
+2024-11-07T23:11:04.034Z [INFO]: Detalhamento de contato
+2024-11-07T23:11:04.037Z [INFO]: Fim da requisição GET /4 - Status: 304 - Tempo: 4ms
+2024-11-07T23:11:07.780Z [INFO]: Início da requisição GET /
+2024-11-07T23:11:07.781Z [INFO]: Listagem de contatos
+2024-11-07T23:11:07.784Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 4ms
+2024-11-07T23:11:09.472Z [INFO]: Início da requisição GET /4
+2024-11-07T23:11:09.473Z [INFO]: Detalhamento de contato
+2024-11-07T23:11:09.476Z [INFO]: Fim da requisição GET /4 - Status: 304 - Tempo: 4ms
+2024-11-07T23:11:13.881Z [INFO]: Início da requisição PUT /4
+2024-11-07T23:11:13.882Z [INFO]: Atualização de contato
+2024-11-07T23:11:13.891Z [INFO]: Fim da requisição PUT /4 - Status: 200 - Tempo: 10ms
+2024-11-07T23:11:20.453Z [INFO]: Início da requisição GET /
+2024-11-07T23:11:20.454Z [INFO]: Listagem de contatos
+2024-11-07T23:11:20.457Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 4ms
+2024-11-07T23:11:37.712Z [INFO]: Início da requisição GET /
+2024-11-07T23:11:37.713Z [INFO]: Listagem de contatos
+2024-11-07T23:11:37.715Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:12:31.531Z [INFO]: Início da requisição GET /
+2024-11-07T23:12:31.532Z [INFO]: Listagem de contatos
+2024-11-07T23:12:31.534Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:14:41.513Z [INFO]: Início da requisição GET /4
+2024-11-07T23:14:41.514Z [INFO]: Detalhamento de contato
+2024-11-07T23:14:41.518Z [INFO]: Fim da requisição GET /4 - Status: 200 - Tempo: 6ms
+2024-11-07T23:14:46.004Z [INFO]: Início da requisição PUT /4
+2024-11-07T23:14:46.005Z [INFO]: Atualização de contato
+2024-11-07T23:14:46.206Z [INFO]: Fim da requisição PUT /4 - Status: 200 - Tempo: 202ms
+2024-11-07T23:14:46.210Z [INFO]: Início da requisição GET /
+2024-11-07T23:14:46.211Z [INFO]: Listagem de contatos
+2024-11-07T23:14:46.213Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 3ms
+2024-11-07T23:15:10.022Z [INFO]: Início da requisição GET /4
+2024-11-07T23:15:10.023Z [INFO]: Detalhamento de contato
+2024-11-07T23:15:10.025Z [INFO]: Fim da requisição GET /4 - Status: 200 - Tempo: 3ms
+2024-11-07T23:15:24.274Z [INFO]: Início da requisição GET /4
+2024-11-07T23:15:24.275Z [INFO]: Detalhamento de contato
+2024-11-07T23:15:24.277Z [INFO]: Fim da requisição GET /4 - Status: 304 - Tempo: 3ms
+2024-11-07T23:19:10.944Z [INFO]: Início da requisição GET /
+2024-11-07T23:19:10.946Z [INFO]: Listagem de contatos
+2024-11-07T23:19:10.947Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:19:26.188Z [INFO]: Início da requisição GET /
+2024-11-07T23:19:26.189Z [INFO]: Listagem de contatos
+2024-11-07T23:19:26.190Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 2ms
+2024-11-07T23:19:34.445Z [INFO]: Início da requisição GET /
+2024-11-07T23:19:34.446Z [INFO]: Listagem de contatos
+2024-11-07T23:19:34.448Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:20:05.611Z [INFO]: Início da requisição GET /
+2024-11-07T23:20:05.612Z [INFO]: Listagem de contatos
+2024-11-07T23:20:05.614Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:20:24.063Z [INFO]: Início da requisição POST /
+2024-11-07T23:20:24.064Z [INFO]: Cadastro de novo contato
+2024-11-07T23:20:24.078Z [INFO]: Fim da requisição POST / - Status: 201 - Tempo: 15ms
+2024-11-07T23:20:32.976Z [INFO]: Início da requisição GET /
+2024-11-07T23:20:32.976Z [INFO]: Listagem de contatos
+2024-11-07T23:20:32.978Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 2ms
+2024-11-07T23:20:34.505Z [INFO]: Início da requisição GET /5
+2024-11-07T23:20:34.506Z [INFO]: Detalhamento de contato
+2024-11-07T23:20:34.508Z [INFO]: Fim da requisição GET /5 - Status: 200 - Tempo: 3ms
+2024-11-07T23:20:45.151Z [INFO]: Início da requisição GET /
+2024-11-07T23:20:45.152Z [INFO]: Listagem de contatos
+2024-11-07T23:20:45.153Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 2ms
+2024-11-07T23:20:48.213Z [INFO]: Início da requisição GET /5
+2024-11-07T23:20:48.214Z [INFO]: Detalhamento de contato
+2024-11-07T23:20:48.216Z [INFO]: Fim da requisição GET /5 - Status: 304 - Tempo: 3ms
+2024-11-07T23:20:49.625Z [INFO]: Início da requisição DELETE /5
+2024-11-07T23:20:49.627Z [INFO]: Remoção de contato
+2024-11-07T23:20:49.634Z [INFO]: Fim da requisição DELETE /5 - Status: 204 - Tempo: 9ms
+2024-11-07T23:20:55.727Z [INFO]: Início da requisição GET /
+2024-11-07T23:20:55.729Z [INFO]: Listagem de contatos
+2024-11-07T23:20:55.731Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 4ms
+2024-11-07T23:20:59.203Z [INFO]: Início da requisição POST /
+2024-11-07T23:20:59.204Z [INFO]: Cadastro de novo contato
+2024-11-07T23:20:59.218Z [INFO]: Fim da requisição POST / - Status: 201 - Tempo: 15ms
+2024-11-07T23:21:03.812Z [INFO]: Início da requisição GET /
+2024-11-07T23:21:03.813Z [INFO]: Listagem de contatos
+2024-11-07T23:21:03.815Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 3ms
+2024-11-07T23:21:04.735Z [INFO]: Início da requisição GET /6
+2024-11-07T23:21:04.736Z [INFO]: Detalhamento de contato
+2024-11-07T23:21:04.739Z [INFO]: Fim da requisição GET /6 - Status: 200 - Tempo: 4ms
+2024-11-07T23:21:06.324Z [INFO]: Início da requisição DELETE /6
+2024-11-07T23:21:06.325Z [INFO]: Remoção de contato
+2024-11-07T23:21:06.332Z [INFO]: Fim da requisição DELETE /6 - Status: 204 - Tempo: 8ms
+2024-11-07T23:21:06.336Z [INFO]: Início da requisição GET /
+2024-11-07T23:21:06.337Z [INFO]: Listagem de contatos
+2024-11-07T23:21:06.338Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 2ms
+2024-11-07T23:28:57.007Z [INFO]: Início da requisição POST /
+2024-11-07T23:28:57.008Z [INFO]: Cadastro de novo contato
+2024-11-07T23:28:57.019Z [INFO]: Fim da requisição POST / - Status: 201 - Tempo: 12ms
+2024-11-07T23:29:32.654Z [INFO]: Início da requisição GET /
+2024-11-07T23:29:32.655Z [INFO]: Listagem de contatos
+2024-11-07T23:29:32.658Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 4ms
+2024-11-07T23:29:33.556Z [INFO]: Início da requisição GET /7
+2024-11-07T23:29:33.557Z [INFO]: Detalhamento de contato
+2024-11-07T23:29:33.560Z [INFO]: Fim da requisição GET /7 - Status: 200 - Tempo: 4ms
+2024-11-07T23:29:35.254Z [INFO]: Início da requisição DELETE /7
+2024-11-07T23:29:35.255Z [INFO]: Remoção de contato
+2024-11-07T23:29:35.266Z [INFO]: Fim da requisição DELETE /7 - Status: 204 - Tempo: 12ms
+2024-11-07T23:29:35.270Z [INFO]: Início da requisição GET /
+2024-11-07T23:29:35.271Z [INFO]: Listagem de contatos
+2024-11-07T23:29:35.273Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 3ms
+2024-11-07T23:30:01.546Z [INFO]: Início da requisição POST /
+2024-11-07T23:30:01.547Z [INFO]: Cadastro de novo contato
+2024-11-07T23:30:01.557Z [INFO]: Fim da requisição POST / - Status: 201 - Tempo: 11ms
+2024-11-07T23:30:13.777Z [INFO]: Início da requisição GET /
+2024-11-07T23:30:13.778Z [INFO]: Listagem de contatos
+2024-11-07T23:30:13.780Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 3ms
+2024-11-07T23:30:14.555Z [INFO]: Início da requisição GET /8
+2024-11-07T23:30:14.556Z [INFO]: Detalhamento de contato
+2024-11-07T23:30:14.558Z [INFO]: Fim da requisição GET /8 - Status: 200 - Tempo: 3ms
+2024-11-07T23:30:21.659Z [INFO]: Início da requisição GET /8
+2024-11-07T23:30:21.660Z [INFO]: Detalhamento de contato
+2024-11-07T23:30:21.662Z [INFO]: Fim da requisição GET /8 - Status: 304 - Tempo: 3ms
+2024-11-07T23:30:47.696Z [INFO]: Início da requisição GET /
+2024-11-07T23:30:47.697Z [INFO]: Listagem de contatos
+2024-11-07T23:30:47.699Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:30:48.917Z [INFO]: Início da requisição GET /8
+2024-11-07T23:30:48.918Z [INFO]: Detalhamento de contato
+2024-11-07T23:30:48.921Z [INFO]: Fim da requisição GET /8 - Status: 304 - Tempo: 4ms
+2024-11-07T23:31:43.573Z [INFO]: Início da requisição POST /
+2024-11-07T23:31:43.574Z [INFO]: Cadastro de novo contato
+2024-11-07T23:31:43.582Z [INFO]: Fim da requisição POST / - Status: 201 - Tempo: 9ms
+2024-11-07T23:31:58.447Z [INFO]: Início da requisição GET /
+2024-11-07T23:31:58.448Z [INFO]: Listagem de contatos
+2024-11-07T23:31:58.451Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 4ms
+2024-11-07T23:32:01.385Z [INFO]: Início da requisição GET /9
+2024-11-07T23:32:01.386Z [INFO]: Detalhamento de contato
+2024-11-07T23:32:01.388Z [INFO]: Fim da requisição GET /9 - Status: 200 - Tempo: 3ms
+2024-11-07T23:32:46.851Z [INFO]: Início da requisição GET /9
+2024-11-07T23:32:46.855Z [INFO]: Detalhamento de contato
+2024-11-07T23:32:46.872Z [INFO]: Fim da requisição GET /9 - Status: 200 - Tempo: 22ms
+2024-11-07T23:34:26.410Z [INFO]: Início da requisição GET /
+2024-11-07T23:34:26.412Z [INFO]: Listagem de contatos
+2024-11-07T23:34:26.415Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 5ms
+2024-11-07T23:35:15.308Z [INFO]: Início da requisição GET /
+2024-11-07T23:35:15.310Z [INFO]: Listagem de contatos
+2024-11-07T23:35:15.313Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 5ms
+2024-11-07T23:35:25.115Z [INFO]: Início da requisição GET /?favorito=true
+2024-11-07T23:35:25.116Z [INFO]: Listagem de contatos
+2024-11-07T23:35:25.120Z [INFO]: Fim da requisição GET /?favorito=true - Status: 200 - Tempo: 5ms
+2024-11-07T23:35:32.739Z [INFO]: Início da requisição GET /
+2024-11-07T23:35:32.741Z [INFO]: Listagem de contatos
+2024-11-07T23:35:32.743Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 4ms
+2024-11-07T23:36:34.336Z [INFO]: Início da requisição GET /
+2024-11-07T23:36:34.337Z [INFO]: Listagem de contatos
+2024-11-07T23:36:34.339Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 3ms
+2024-11-07T23:48:09.797Z [INFO]: Início da requisição POST /register
+2024-11-07T23:48:09.797Z [INFO]: Cadastro de novo usuário
+2024-11-07T23:48:09.799Z [ERROR]: Erro ao cadastrar novo usuário
+2024-11-07T23:48:09.800Z [INFO]: Fim da requisição POST /register - Status: 400 - Tempo: 3ms
+2024-11-07T23:48:53.495Z [INFO]: Início da requisição POST /register
+2024-11-07T23:48:53.496Z [INFO]: Cadastro de novo usuário
+2024-11-07T23:48:53.501Z [ERROR]: Erro ao cadastrar novo usuário
+2024-11-07T23:48:53.503Z [INFO]: Fim da requisição POST /register - Status: 400 - Tempo: 8ms
+2024-11-07T23:49:31.000Z [INFO]: Início da requisição POST /register
+2024-11-07T23:49:31.001Z [INFO]: Cadastro de novo usuário
+2024-11-07T23:49:31.087Z [INFO]: Fim da requisição POST /register - Status: 201 - Tempo: 87ms
+2024-11-07T23:50:36.510Z [INFO]: Início da requisição POST /register
+2024-11-07T23:50:36.510Z [INFO]: Cadastro de novo usuário
+2024-11-07T23:50:36.586Z [INFO]: Fim da requisição POST /register - Status: 201 - Tempo: 76ms
+2024-11-07T23:50:53.540Z [INFO]: Início da requisição POST /register
+2024-11-07T23:50:53.541Z [INFO]: Cadastro de novo usuário
+2024-11-07T23:50:53.612Z [INFO]: Fim da requisição POST /register - Status: 201 - Tempo: 72ms
+2024-11-07T23:51:07.919Z [INFO]: Início da requisição POST /login
+2024-11-07T23:51:07.919Z [INFO]: Login iniciado
+2024-11-07T23:51:07.994Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 75ms
+2024-11-07T23:51:08.023Z [INFO]: Início da requisição GET /
+2024-11-07T23:51:08.025Z [INFO]: Listagem de contatos
+2024-11-07T23:51:08.028Z [INFO]: Fim da requisição GET / - Status: 200 - Tempo: 5ms
+2024-11-07T23:51:35.656Z [INFO]: Início da requisição POST /login
+2024-11-07T23:51:35.656Z [INFO]: Login iniciado
+2024-11-07T23:51:35.726Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 70ms
+2024-11-07T23:51:35.748Z [INFO]: Início da requisição GET /
+2024-11-07T23:51:35.750Z [INFO]: Listagem de contatos
+2024-11-07T23:51:35.752Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 4ms
+2024-11-07T23:54:46.880Z [INFO]: Início da requisição POST /recuperar-senha
+2024-11-07T23:54:46.881Z [INFO]: Recuperação de senha iniciada.
+2024-11-07T23:54:47.805Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 925ms
+2024-11-08T00:04:42.131Z [INFO]: Início da requisição POST /recuperar-senha
+2024-11-08T00:04:42.133Z [INFO]: Recuperação de senha iniciada.
+2024-11-08T00:04:43.157Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 1026ms
+2024-11-08T00:05:51.782Z [INFO]: Início da requisição POST /recuperar-senha
+2024-11-08T00:05:51.783Z [INFO]: Recuperação de senha iniciada.
+2024-11-08T00:05:52.509Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 728ms
+2024-11-08T00:06:33.808Z [INFO]: Início da requisição POST /recuperar-senha
+2024-11-08T00:06:33.809Z [INFO]: Recuperação de senha iniciada.
+2024-11-08T00:06:34.478Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 671ms
+2024-11-08T00:10:09.869Z [INFO]: Início da requisição POST /recuperar-senha
+2024-11-08T00:10:09.870Z [INFO]: Recuperação de senha iniciada.
+2024-11-08T00:10:10.739Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 871ms
+2024-11-08T00:11:13.845Z [INFO]: Início da requisição POST /recuperar-senha
+2024-11-08T00:11:13.847Z [INFO]: Recuperação de senha iniciada.
+2024-11-08T00:11:14.569Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 724ms
+2024-11-08T00:12:45.802Z [INFO]: Início da requisição POST /recuperar-senha
+2024-11-08T00:12:45.804Z [INFO]: Recuperação de senha iniciada.
+2024-11-08T00:12:46.619Z [INFO]: Fim da requisição POST /recuperar-senha - Status: 200 - Tempo: 817ms
+2024-11-08T00:13:16.663Z [INFO]: Início da requisição POST /resetar-senha
+2024-11-08T00:13:16.663Z [INFO]: Redefinição de senha iniciada.
+2024-11-08T00:13:16.756Z [INFO]: Fim da requisição POST /resetar-senha - Status: 200 - Tempo: 93ms
+2024-11-08T00:13:41.116Z [INFO]: Início da requisição POST /login
+2024-11-08T00:13:41.116Z [INFO]: Login iniciado
+2024-11-08T00:13:41.185Z [INFO]: Fim da requisição POST /login - Status: 200 - Tempo: 69ms
+2024-11-08T00:13:41.220Z [INFO]: Início da requisição GET /
+2024-11-08T00:13:41.221Z [INFO]: Listagem de contatos
+2024-11-08T00:13:41.224Z [INFO]: Fim da requisição GET / - Status: 304 - Tempo: 4ms
+2024-11-08T00:16:32.917Z [INFO]: Início da requisição POST /resetar-senha
+2024-11-08T00:16:32.917Z [INFO]: Redefinição de senha iniciada.
+2024-11-08T00:16:32.991Z [INFO]: Fim da requisição POST /resetar-senha - Status: 200 - Tempo: 74ms

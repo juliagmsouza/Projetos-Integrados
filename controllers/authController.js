@@ -30,7 +30,7 @@ exports.login = async (req, res) => {
     }
 
     const token = jwt.sign({ userId: usuario.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
-    res.json({ token });
+    res.json({ token, name: usuario.nome });
   } catch (error) {
     logger.error('Erro ao efetuar login', { err: error })
     res.status(500).json({ error: 'Erro ao fazer login' });
@@ -50,19 +50,18 @@ exports.solicitarRecuperacaoSenha = async (req, res) => {
 
     const token = jwt.sign({ userId: usuario.id }, process.env.JWT_SECRET, { expiresIn: process.env.PASSWORD_RESET_EXPIRATION || '1h' });
 
-    const linkRecuperacao = `http://localhost:3000/resetar-senha?token=${token}`;
-
+    const linkRecuperacao = `${process.env.CLIENT_URL}/#/password-recovery?token=${token}`;
 
     const msg = {
       to: email,
-      from: 'juliagmsouza12@gmail.com', 
+      from: 'juliagmsouza12@gmail.com',
       subject: 'Recuperação de Senha',
       html: `
-        <p>Você solicitou a recuperação de senha.</p>
-        <p>Clique no link abaixo para redefinir sua senha:</p>
-        <a href="${linkRecuperacao}">Redefinir Senha</a>
-        <p>O link expira em 1 hora.</p>
-      `,
+  <p>Você solicitou a recuperação de senha.</p>
+  <p>Clique no link abaixo para redefinir sua senha:</p>
+  <p><a href="${linkRecuperacao}" target="_blank" style="color: #1a73e8; text-decoration: none;">Redefinir Senha</a></p>
+  <p>O link expira em 1 hora.</p>
+`,
     };
 
     await sgMail.send(msg);

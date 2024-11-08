@@ -52,7 +52,7 @@ exports.detalharContato = async (req, res) => {
 
     const contato = await Contato.findOne({
       where: { usuarioId: req.userId, id },
-      attributes: ['id', 'nome', 'telefone', 'email', 'createdAt', 'updatedAt'],
+      attributes: ['id', 'nome', 'telefone', 'email', 'favorito', 'createdAt', 'updatedAt'],
       include: [{
         model: Endereco,
         attributes: ['rua', 'cidade', 'estado', 'cep']
